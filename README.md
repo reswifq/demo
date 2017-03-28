@@ -1,6 +1,6 @@
 # ReswifqDemo
 
-![Swift](https://img.shields.io/badge/swift-3.0.2-brightgreen.svg)
+![Swift](https://img.shields.io/badge/swift-3.1-brightgreen.svg)
 
 Simple project to demonstrate the use of [Reswifq](https://github.com/reswifq/reswifq).
 
