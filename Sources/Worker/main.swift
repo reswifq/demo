@@ -23,7 +23,6 @@ import Foundation
 import SwiftRedis
 import KituraRedisClient
 import RedisClient
-import Scheduler
 import Reswifq
 import Jobs
 

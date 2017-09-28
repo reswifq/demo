@@ -1,3 +1,5 @@
+// swift-tools-version:4.0
+
 //
 //  Package.swift
 //  ReswifqDemo
@@ -23,14 +25,19 @@ import PackageDescription
 
 let package = Package(
 	name: "ReswifqDemo",
-	targets: [
-		Target(name: "Scheduler", dependencies: ["Jobs"]),
-		Target(name: "Worker", dependencies: ["Jobs"]),
-		Target(name: "Clock", dependencies: ["Jobs"]),
-		Target(name: "Jobs")
+	products: [
+		.executable(name: "Scheduler", targets: ["Scheduler"]),
+		.executable(name: "Worker", targets: ["Worker"]),
+		.executable(name: "Clock", targets: ["Clock"])
 	],
 	dependencies: [
-		.Package(url: "https://github.com/reswifq/reswifq.git", majorVersion: 1),
-		.Package(url: "https://github.com/reswifq/redis-client-kitura.git", majorVersion: 1)
+		.package(url: "https://github.com/reswifq/reswifq.git", .upToNextMajor(from: "1.2.0")),
+		.package(url: "https://github.com/reswifq/redis-client-kitura.git", .upToNextMajor(from: "1.2.0"))
+	],
+	targets: [
+		.target(name: "Scheduler", dependencies: ["Jobs", "KituraRedisClient"]),
+		.target(name: "Worker", dependencies: ["Jobs", "KituraRedisClient"]),
+		.target(name: "Clock", dependencies: ["Jobs", "KituraRedisClient"]),
+		.target(name: "Jobs", dependencies: ["Reswifq"])
 	]
 )

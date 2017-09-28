@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "KituraRedisClient",
+        "repositoryURL": "https://github.com/reswifq/redis-client-kitura.git",
+        "state": {
+          "branch": null,
+          "revision": "55a9fbd879c5d42cb186724fd87e456bdf70a0ba",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "Pool",
+        "repositoryURL": "https://github.com/reswifq/pool.git",
+        "state": {
+          "branch": null,
+          "revision": "b0987c386069829b2cb1e43fa802321979ef07f2",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "RedisClient",
+        "repositoryURL": "https://github.com/reswifq/redis-client.git",
+        "state": {
+          "branch": null,
+          "revision": "64cbf47a9ebf42ebf0e3a72b2b00ea11dedb16c6",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "Reswifq",
+        "repositoryURL": "https://github.com/reswifq/reswifq.git",
+        "state": {
+          "branch": null,
+          "revision": "ebdabf79c163d5fc2f0f142b286f48bd8bba8e77",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "Socket",
+        "repositoryURL": "https://github.com/IBM-Swift/BlueSocket.git",
+        "state": {
+          "branch": null,
+          "revision": "1c957b42727761d8aba4bdfcdcf5ba5f566a6a42",
+          "version": "0.12.69"
+        }
+      },
+      {
+        "package": "SwiftRedis",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-redis.git",
+        "state": {
+          "branch": null,
+          "revision": "d6626c01bbe06f837da63e8fc104133ade9b91c6",
+          "version": "1.8.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

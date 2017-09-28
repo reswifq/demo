@@ -1,6 +1,6 @@
 # ReswifqDemo
 
-![Swift](https://img.shields.io/badge/swift-3.1-brightgreen.svg)
+![Swift](https://img.shields.io/badge/swift-4.0-brightgreen.svg)
 
 Simple project to demonstrate the use of [Reswifq](https://github.com/reswifq/reswifq).
 
@@ -99,7 +99,7 @@ let reswifc = Reswifc(processes: [
 reswifc.run()
 ```
 
-**Notes:** 
+**Notes:**
 
 - As each process runs in its own thread we are using a `RedisClientPool` of size `2` which is shared across both because we are passing to each process the same queue instance.
 - Based on your project, you may need or not, any combination of the above processes running.
