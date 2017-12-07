@@ -26,7 +26,7 @@ import RedisClient
 import Reswifq
 import Jobs
 
-let client = RedisClientPool(maxElementCount: 10) { () -> RedisClient in
+let client = RedisClientPool(maxElementCount: 10) { () throws -> RedisClient in
 
     let client = Redis()
     client.connect(host: "localhost", port: 6379, callback: { _ in })

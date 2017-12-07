@@ -31,8 +31,8 @@ let package = Package(
 		.executable(name: "Clock", targets: ["Clock"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/reswifq/reswifq.git", .upToNextMajor(from: "1.2.0")),
-		.package(url: "https://github.com/reswifq/redis-client-kitura.git", .upToNextMajor(from: "1.2.0"))
+		.package(url: "https://github.com/reswifq/reswifq.git", .upToNextMajor(from: "1.3.0")),
+		.package(url: "https://github.com/reswifq/redis-client-kitura.git", .upToNextMajor(from: "1.3.0"))
 	],
 	targets: [
 		.target(name: "Scheduler", dependencies: ["Jobs", "KituraRedisClient"]),
